@@ -114,7 +114,7 @@ Computed two sets of metrics on a held-out validation set (15% split, 12,361 pro
 - Trained on a 10,000-protein subsample of the 70,043 available training proteins
 - Baseline model only (logistic regression); no neural network or more advanced multi-label architecture attempted yet
 - Embeddings use the smallest practical ESM2 variant (35M parameters)
-- Qualitative inspection of individual predictions (see below) shows the model correctly identifies protein-specific GO terms in many cases, but performance is inconsistent across proteins — some get strong, specific matches while others default toward more generic cross-category terms. This variability is consistent with the model's moderate Fmax (0.349) and its reduced training scope.
+- Qualitative inspection of individual predictions (see below) shows the model correctly identifies protein-specific GO terms in many cases (example, matching 3 of 5 top predictions for one validation protein), but performance is inconsistent across proteins — some get strong, specific matches while others default toward more generic cross-category terms. This variability is consistent with the model's moderate Fmax (0.349) and its reduced training scope (100 terms, 10K samples).
 
 **Example — a case where the model performs well** (3 of its top 5 predictions are correct, specific matches, not generic defaults):
 
